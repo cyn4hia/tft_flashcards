@@ -1,5 +1,6 @@
 body {
-    font-family: Pacifico;
+    font-family: Inter;
+    font-weight: bold;
     text-align: center;
     background: #f5f5f5;
     margin: 0;
@@ -37,7 +38,7 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    backface-visibility: hidden; /* hides when flipped */
+    backface-visibility: hidden; 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -52,7 +53,7 @@ h1 {
 }
 
 .flashcard .back {
-    transform: rotateY(180deg); /* flipped 180° for back side */
+    transform: rotateY(180deg);
 }
 
 .flashcard img {

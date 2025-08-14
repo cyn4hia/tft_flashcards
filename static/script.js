@@ -20,7 +20,6 @@ function showFlashcard() {
     const card = document.createElement('div');
     card.className = 'flashcard';
 
-    // Image + text for front
     const imgHTML = flashcards[currentIndex].image
         ? `<img src="/static/${flashcards[currentIndex].image}" alt="">`
         : '';
@@ -37,7 +36,7 @@ function showFlashcard() {
         </div>
     `;
 
-    // Flip on click
+
     card.addEventListener('click', () => {
         card.classList.toggle('flip');
     });
@@ -45,7 +44,6 @@ function showFlashcard() {
     container.appendChild(card);
 }
 
-// Next button
 document.getElementById('next-btn').addEventListener('click', () => {
     currentIndex++;
     showFlashcard();
